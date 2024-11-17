@@ -26,7 +26,7 @@ app.use(session({
     }
 }));
 app.use(cors({
-    origin: process.env.Frontend_URL, // Replace with your Next.js frontend URL
+    origin: '*', // Replace with your Next.js frontend URL
     credentials: true, // Enable credentials (cookies) to be sent
 }));
 app.use('/', productsRoutes);
